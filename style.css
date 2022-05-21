@@ -1,0 +1,524 @@
+:root {
+  --vermelho: #ff000d;
+  --preto: #000000;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* ELEMENTOS BASE */
+
+body {
+  background: var(--preto);
+  color: white;
+}
+
+.barra-inicial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.logo {
+  margin-left: 10px;
+  color: var(--vermelho);
+  font-size: 50px;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 25px;
+}
+
+header nav a:hover {
+  color: var(--vermelho);
+}
+
+/* FILME PRINCIPAL */
+
+.div-pai {
+  min-width: 100vw;
+  min-height: 400px;
+  display: flex;
+  background: var(--preto);
+}
+
+.sinopse {
+  background-color: rgba(5, 5, 5, 0.616);
+  min-height: 100%;
+  float: left;
+  width: 35%;
+  flex-basis: auto;
+}
+
+.sinopseBox {
+  margin-left: 100px;
+  position: absolute;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relevancia {
+  color: #1fff00;
+}
+
+.qualidade {
+  border: solid 0.2px;
+  border-radius: 5px;
+}
+
+.avaliacao {
+  border: solid 0.2px;
+  border-radius: 5px;
+}
+
+.original {
+  color: #FFFFFF;
+}
+
+.texto-sinopse {
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 80pxpx;
+}
+
+.realizador-do-filme {
+  align-content: space-between;
+}
+
+.play-info {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.play {
+  border: solid 0.2px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  transition: all 0.10s;
+  padding: 0 0.5em;
+}
+
+.play:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .20s ease-in-out;
+  -webkit-transition: all .20s ease-in-out;
+}
+
+.more-info {
+  border: solid 0.6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.10s;
+
+}
+
+.more-info:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  -moz-transition: all .20s ease-in-out;
+  -webkit-transition: all .20s ease-in-out;
+}
+
+.imagem {
+  min-height: 100%;
+  width: 65%;
+}
+
+.imagem-central {
+  width: auto;
+  height: 100%;
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gradient {
+  opacity: 0.7;
+  mask-image: linear-gradient(to left, #141414 60%, #14141414 90%);
+  -webkit-mask-image: linear-gradient(to left, #141414 60%, #14141414 90%);
+}
+
+/* filmes de Ação */
+
+.imagens-acao {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.tropa1{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;    
+}
+.tropa2{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.trezentus{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;   
+}
+.pai2{
+  position: absolute;
+      text-align: center;
+      top: 140px;
+      width: 247px;
+      line-height: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+}
+.play1{
+  background: var(--preto);
+  color: var(--vermelho);
+  width: 24%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.info{
+  margin-right: 46px;
+    background: var(--preto);
+    color:var(--vermelho);
+    width: 24%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.o-ataque{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+ 
+}
+.o-ataque:hover{
+  border: solid 0.8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.resgate{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.resgate:hover{
+  border: solid 0.8px;
+  border-radius: 6px;
+
+}
+
+
+.dose-dupla{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;    
+}
+.false{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.fury{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.linha-acao{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.rambo{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.cobra{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.arranhaceu{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+
+
+
+.acao {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+
+
+.comedia{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.imagens-comedia {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mae-peca{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.davina{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.debi-loide{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.comedia-romantica{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.bad{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.eur-trip{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.farofeiros{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.gente-grande{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.tio-perfeito{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.vai-certo{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.vai-que-cola{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.diet{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.rico{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+
+
+.series{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.imagens-series{
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.oitenta{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.cursed{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.demolidor{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.heaven{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.lucifer{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.ragnarok{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.sabrina{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.surviver{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.things{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.travel{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.witcher{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.you{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  
+}
+.cage{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;  }
